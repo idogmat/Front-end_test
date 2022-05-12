@@ -1,0 +1,83 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100vh;
+    font-size: 25px;
+}
+.header {
+    height: 50px;
+    text-align: center;
+    border: 3px solid #d80c0c;
+
+}
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.users {
+    border: 3px solid #cf6807;
+    width: 200px;
+    overflow: auto;
+}
+.users::-webkit-scrollbar {
+    margin:0 5px ;
+    border: 3px solid #cf6807;
+    border-right: 0;
+}
+
+.users::-webkit-scrollbar-thumb {
+    border: 3px solid #cf6807;
+    background: #cf6807;
+
+}
+.chat {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: 3px solid #5807cb;
+    border-right: 0;
+    overflow: auto;
+}
+
+.chat p {
+    margin: 10px;
+}
+.chat::-webkit-scrollbar {
+    margin:0 5px ;
+    border: 3px solid #5807cb;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    border: 3px solid #5807cb;
+    background: #5807cb;
+
+}
+.footer {
+    height: 100px;
+    text-align: center;
+}
